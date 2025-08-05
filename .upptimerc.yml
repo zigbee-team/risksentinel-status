@@ -1,36 +1,71 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Owner and repository name
+  owner: zigbee-team  # Replace with your GitHub org name
+  repo: risksentinel-status
 
-sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  # Sites to monitor
+  sites:
+    # Public health endpoint
+    - name: RiskSentinel API - Health Check
+      url: https://api.risksentinel.ai/health
+      expectedStatusCodes:
+        - 200
+      maxResponseTime: 5000
 
-status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    # Protected endpoints (require API key)
+    - name: RiskSentinel API - Events Endpoint
+      url: https://api.risksentinel.ai/v1/events?page_size=1
+      method: GET
+      headers:
+        - "x-api-key: $RISKSENTINEL_API_KEY"
+        - "Accept: application/json"
+      expectedStatusCodes:
+        - 200
+      maxResponseTime: 5000
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - name: RiskSentinel API - News Endpoint
+      url: https://api.risksentinel.ai/v1/news?page_size=1
+      method: GET
+      headers:
+        - "x-api-key: $RISKSENTINEL_API_KEY"
+        - "Accept: application/json"
+      expectedStatusCodes:
+        - 200
+      maxResponseTime: 5000
+
+    # Main website
+    - name: RiskSentinel Main Website
+      url: https://risksentinel.ai
+      expectedStatusCodes:
+        - 200
+      maxResponseTime: 5000
+
+  # Status website configuration
+  status-website:
+    cname: status.risksentinel.com
+    name: RiskSentinel API Status
+    logoUrl: https://risksentinel.ai/logo.png
+    introTitle: "**RiskSentinel API** Status Page"
+    introMessage: |
+      Real-time monitoring of RiskSentinel API services. 
+      Subscribe to updates or check back here anytime.
+
+    navbar:
+      - title: Status
+        href: /
+      - title: API Documentation
+        href: https://risksentinel.ai/docs
+      - title: Support
+        href: mailto:support@risksentinel.ai
+
+  # Monitoring schedule (every 5 minutes)
+  workflowSchedule:
+    uptime: "*/5 * * * *"
+
+  # Notifications
+  notifications:
+    - type: email
+      email: support@risksentinel.ai
+
+  # Assignees for incidents
+  assignees:
+    - olgashi  # Replace with your username
