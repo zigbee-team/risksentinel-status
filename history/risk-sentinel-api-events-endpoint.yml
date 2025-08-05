@@ -1,7 +1,7 @@
 url: https://api.risksentinel.ai/v1/events?page_size=1
 status: down
 code: 403
-responseTime: 6
-lastUpdated: 2025-08-05T21:17:11.871Z
+responseTime: 209
+lastUpdated: 2025-08-05T22:07:01.734Z
 startTime: 2025-08-05T20:48:18.088Z
 generator: Upptime <https://github.com/upptime/upptime>
