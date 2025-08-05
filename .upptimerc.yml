@@ -41,7 +41,7 @@
 
   # Status website configuration
   status-website:
-    cname: status.risksentinel.com
+    cname: status.risksentinel.ai
     name: RiskSentinel API Status
     logoUrl: https://risksentinel.ai/logo.png
     introTitle: "**RiskSentinel API** Status Page"
