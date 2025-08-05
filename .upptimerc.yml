@@ -7,7 +7,7 @@ repo: risksentinel-status
 sites:
   # Public health endpoint (no auth required)
   - name: RiskSentinel API - Health Check
-    url: https://api.risksentinel.ai/health
+    url: https://risksentinel.ai/health
     expectedStatusCodes:
       - 200
     maxResponseTime: 5000
@@ -17,6 +17,7 @@ sites:
     url: https://api.risksentinel.ai/v1/events?page_size=1
     method: GET
     headers:
+      - "User-Agent: Upptime/1.0"
       - "x-api-key: $RISKSENTINEL_API_KEY"
       - "Accept: application/json"
     expectedStatusCodes:
@@ -27,6 +28,7 @@ sites:
     url: https://api.risksentinel.ai/v1/news?page_size=1
     method: GET
     headers:
+      - "User-Agent: Upptime/1.0"
       - "x-api-key: $RISKSENTINEL_API_KEY"
       - "Accept: application/json"
     expectedStatusCodes:
@@ -37,6 +39,7 @@ sites:
     url: https://api.risksentinel.ai/v1/regulatory?page_size=1
     method: GET
     headers:
+      - "User-Agent: Upptime/1.0"
       - "x-api-key: $RISKSENTINEL_API_KEY"
       - "Accept: application/json"
     expectedStatusCodes:
@@ -47,6 +50,7 @@ sites:
     url: https://api.risksentinel.ai/v1/topics
     method: GET
     headers:
+      - "User-Agent: Upptime/1.0"
       - "x-api-key: $RISKSENTINEL_API_KEY"
       - "Accept: application/json"
     expectedStatusCodes:
@@ -57,6 +61,7 @@ sites:
     url: https://api.risksentinel.ai/v1/sources
     method: GET
     headers:
+      - "User-Agent: Upptime/1.0"
       - "x-api-key: $RISKSENTINEL_API_KEY"
       - "Accept: application/json"
     expectedStatusCodes:
