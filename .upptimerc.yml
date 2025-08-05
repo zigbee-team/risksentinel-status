@@ -1,71 +1,166 @@
-# Owner and repository name
-  owner: zigbee-team  # Replace with your GitHub org name
-  repo: risksentinel-status
+# RiskSentinel API Status Page Configuration
+# Owner and repository information
+owner: zigbee-team 
+repo: risksentinel-status
 
-  # Sites to monitor
-  sites:
-    # Public health endpoint
-    - name: RiskSentinel API - Health Check
-      url: https://api.risksentinel.ai/health
-      expectedStatusCodes:
-        - 200
-      maxResponseTime: 5000
+# Sites to monitor
+sites:
+  # Public health endpoint (no auth required)
+  - name: RiskSentinel API - Health Check
+    url: https://api.risksentinel.ai/health
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
 
-    # Protected endpoints (require API key)
-    - name: RiskSentinel API - Events Endpoint
-      url: https://api.risksentinel.ai/v1/events?page_size=1
-      method: GET
-      headers:
-        - "x-api-key: $RISKSENTINEL_API_KEY"
-        - "Accept: application/json"
-      expectedStatusCodes:
-        - 200
-      maxResponseTime: 5000
+  # Protected endpoints (require API key)
+  - name: RiskSentinel API - Events Endpoint
+    url: https://api.risksentinel.ai/v1/events?page_size=1
+    method: GET
+    headers:
+      - "x-api-key: $RISKSENTINEL_API_KEY"
+      - "Accept: application/json"
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
+    
+  - name: RiskSentinel API - News Endpoint
+    url: https://api.risksentinel.ai/v1/news?page_size=1
+    method: GET
+    headers:
+      - "x-api-key: $RISKSENTINEL_API_KEY"
+      - "Accept: application/json"
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
 
-    - name: RiskSentinel API - News Endpoint
-      url: https://api.risksentinel.ai/v1/news?page_size=1
-      method: GET
-      headers:
-        - "x-api-key: $RISKSENTINEL_API_KEY"
-        - "Accept: application/json"
-      expectedStatusCodes:
-        - 200
-      maxResponseTime: 5000
+  - name: RiskSentinel API - Regulatory Endpoint
+    url: https://api.risksentinel.ai/v1/regulatory?page_size=1
+    method: GET
+    headers:
+      - "x-api-key: $RISKSENTINEL_API_KEY"
+      - "Accept: application/json"
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
 
-    # Main website
-    - name: RiskSentinel Main Website
-      url: https://risksentinel.ai
-      expectedStatusCodes:
-        - 200
-      maxResponseTime: 5000
+  - name: RiskSentinel API - Topics Endpoint
+    url: https://api.risksentinel.ai/v1/topics
+    method: GET
+    headers:
+      - "x-api-key: $RISKSENTINEL_API_KEY"
+      - "Accept: application/json"
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 3000
 
-  # Status website configuration
-  status-website:
-    cname: status.risksentinel.ai
-    name: RiskSentinel API Status
-    logoUrl: https://risksentinel.ai/logo.png
-    introTitle: "**RiskSentinel API** Status Page"
-    introMessage: |
-      Real-time monitoring of RiskSentinel API services. 
-      Subscribe to updates or check back here anytime.
+  - name: RiskSentinel API - Sources Endpoint
+    url: https://api.risksentinel.ai/v1/sources
+    method: GET
+    headers:
+      - "x-api-key: $RISKSENTINEL_API_KEY"
+      - "Accept: application/json"
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 3000
 
-    navbar:
-      - title: Status
-        href: /
-      - title: API Documentation
-        href: https://risksentinel.ai/docs
-      - title: Support
-        href: mailto:support@risksentinel.ai
+  # Main website
+  - name: RiskSentinel Main Website
+    url: https://risksentinel.ai
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 5000
 
-  # Monitoring schedule (every 5 minutes)
-  workflowSchedule:
-    uptime: "*/5 * * * *"
+# Status website configuration
+status-website:
+  # Custom domain (configure DNS as needed)
+  cname: status.risksentinel.ai
+  # OR use GitHub Pages default URL:
+  # baseUrl: /risksentinel-status
+  
+  # Branding
+  name: RiskSentinel API Status
+  logoUrl: https://risksentinel.ai/favicon.svg  # Replace with your logo URL
+  introTitle: "**RiskSentinel API** Status Page"
+  introMessage: |
+    Real-time monitoring of RiskSentinel API services. 
+    Subscribe to updates or check back here anytime.
+  
+  # Custom CSS and Meta Tags
+  customHeadHtml: |
+    <link rel="stylesheet" href=".github/upptime-themes/custom.css">
+    <link rel="icon" type="image/png" href="https://risksentinel.ai/favicon.png">
+    <meta name="theme-color" content="#1ca5ba">
+    <meta property="og:title" content="RiskSentinel API Status">
+    <meta property="og:description" content="Real-time monitoring of RiskSentinel API services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://status.risksentinel.com">
+    <meta property="og:image" content="https://risksentinel.ai/status-preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RiskSentinel API Status">
+    <meta name="twitter:description" content="Real-time monitoring of RiskSentinel API services">
+    <meta name="twitter:image" content="https://risksentinel.ai/status-preview.png">
+  
+  # Navigation links
+  navbar:
+    - title: Status
+      href: /
+    - title: API Documentation
+      href: https://risksentinel.ai/docs
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
 
-  # Notifications
-  notifications:
-    - type: email
-      email: support@risksentinel.ai
+# Monitoring schedule (uses cron syntax)
+workflowSchedule:
+  graphs: "0 0 * * *"        # Daily at midnight
+  responseTime: "0 23 * * *" # Daily at 11 PM
+  staticSite: "0 1 * * *"    # Daily at 1 AM
+  summary: "0 0 * * *"       # Daily at midnight
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"       # Daily at 3 AM
+  uptime: "*/5 * * * *"      # Every 5 minutes
 
-  # Assignees for incidents
-  assignees:
-    - olgashi  # Replace with your username
+# Notification settings
+notifications:
+  - type: email
+    email: support@risksentinel.ai
+  # Slack integration (optional)
+  # - type: slack
+  #   channel: "#api-status"
+  #   webhook: $SLACK_WEBHOOK_URL
+
+# Assign incidents to team members
+assignees:
+  - olgashi  # Replace with actual GitHub usernames
+  # - team-member-username
+
+# Commit messages customization
+commitMessages:
+  commitAuthorName: "Upptime Bot"
+  commitAuthorEmail: "support@risksentinel.ai"
+
+# Upptime configuration
+runner: ubuntu-latest              # Use GitHub's hosted runners
+skipDescriptionUpdate: true       # Don't update repo description
+skipTopicsUpdate: true            # Don't update repo topics
+skipHomepageUpdate: true          # Don't update repo homepage
+
+# Additional configuration options
+i18n:
+  activeIncidents: Active Incidents
+  allSystemsOperational: All Systems Operational
+  incidentReport: "Incident Report for **$DATE**"
+  activeIncidentSummary: Opened $DATE with $POSTS post(s)
+  incidentTitle: Incident $NUMBER
+  incidentDetails: Incident Details
+  incidentFixed: Fixed
+  incidentFixedSummary: Closed $DATE with $POSTS post(s)
+  incidentPostmortem: Postmortem
+  incidentPostmortemSummary: Postmortem published $DATE
+  incidentSubscribe: Subscribe to updates
+  lastUpdated: Last updated
+  mostRecentUpdate: Most recent update
+  overallUptimeTitle: Overall Uptime
+  overallUptimeSummary: All-time uptime for RiskSentinel API
+  responseTimeTitle: Average Response Time
+  responseTimeSummary: Average response time over the past 24 hours
+  liveStatusHtmlComment: "<!-- live status -->"
