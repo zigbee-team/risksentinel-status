@@ -111,8 +111,6 @@ status-website:
       href: /
     - title: API Documentation
       href: https://risksentinel.ai/docs
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
 
 # Monitoring schedule (uses cron syntax)
 workflowSchedule:
