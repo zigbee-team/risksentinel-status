@@ -1,7 +1,7 @@
 url: https://api.risksentinel.ai/v1/topics
-status: down
-code: 403
-responseTime: 6
-lastUpdated: 2025-08-27T23:05:16.597Z
+status: up
+code: 200
+responseTime: 379
+lastUpdated: 2025-08-28T19:05:42.822Z
 startTime: 2025-08-05T21:17:14.353Z
 generator: Upptime <https://github.com/upptime/upptime>
