@@ -54,26 +54,6 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "RiskSentinel API - Regulatory Endpoint",
-    "url": "https://api.risksentinel.ai/v1/regulatory",
-    "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
-    "slug": "risk-sentinel-api-regulatory-endpoint",
-    "status": "down",
-    "uptime": "0.00%",
-    "uptimeDay": "0.00%",
-    "uptimeWeek": "0.00%",
-    "uptimeMonth": "0.00%",
-    "uptimeYear": "0.00%",
-    "time": 31,
-    "timeDay": 89,
-    "timeWeek": 50,
-    "timeMonth": 31,
-    "timeYear": 31,
-    "dailyMinutesDown": {
-      "2025-08-29": 4
-    }
-  },
-  {
     "name": "RiskSentinel API - Topics Endpoint",
     "url": "https://api.risksentinel.ai/v1/topics",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
