@@ -40,10 +40,10 @@
     "url": "https://api.risksentinel.ai/v1/news",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-news-endpoint",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.87%",
+    "uptimeWeek": "99.98%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 237,
@@ -51,7 +51,9 @@
     "timeWeek": 303,
     "timeMonth": 368,
     "timeYear": 237,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2025-09-18": 2
+    }
   },
   {
     "name": "RiskSentinel API - Topics Endpoint",
