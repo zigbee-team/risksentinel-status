@@ -22,19 +22,19 @@
     "url": "https://api.risksentinel.ai/v1/events",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-events-endpoint",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.79%",
-    "uptimeWeek": "99.97%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "100.00%",
-    "time": 431,
-    "timeDay": 460,
-    "timeWeek": 611,
-    "timeMonth": 479,
-    "timeYear": 431,
+    "status": "up",
+    "uptime": "99.98%",
+    "uptimeDay": "99.02%",
+    "uptimeWeek": "99.86%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "99.98%",
+    "time": 429,
+    "timeDay": 415,
+    "timeWeek": 579,
+    "timeMonth": 474,
+    "timeYear": 429,
     "dailyMinutesDown": {
-      "2025-10-03": 3
+      "2025-10-03": 14
     }
   },
   {
