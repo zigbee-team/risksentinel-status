@@ -1,7 +1,7 @@
 url: https://risksentinel.ai/health
-status: down
-code: 500
-responseTime: 214
-lastUpdated: 2025-11-18T13:00:02.739Z
+status: up
+code: 200
+responseTime: 441
+lastUpdated: 2025-11-18T14:42:04.442Z
 startTime: 2025-08-05T20:48:16.639Z
 generator: Upptime <https://github.com/upptime/upptime>
