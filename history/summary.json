@@ -4,19 +4,19 @@
     "url": "https://risksentinel.ai/health",
     "icon": "https://icons.duckduckgo.com/ip3/risksentinel.ai.ico",
     "slug": "risk-sentinel-api-health-check",
-    "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "98.83%",
-    "uptimeWeek": "99.83%",
-    "uptimeMonth": "99.96%",
-    "uptimeYear": "99.99%",
-    "time": 320,
-    "timeDay": 322,
-    "timeWeek": 318,
-    "timeMonth": 330,
-    "timeYear": 320,
+    "status": "up",
+    "uptime": "99.92%",
+    "uptimeDay": "91.77%",
+    "uptimeWeek": "98.82%",
+    "uptimeMonth": "99.73%",
+    "uptimeYear": "99.92%",
+    "time": 321,
+    "timeDay": 346,
+    "timeWeek": 329,
+    "timeMonth": 333,
+    "timeYear": 321,
     "dailyMinutesDown": {
-      "2025-11-18": 17
+      "2025-11-18": 119
     }
   },
   {
@@ -24,19 +24,19 @@
     "url": "https://api.risksentinel.ai/v1/events",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-events-endpoint",
-    "status": "down",
-    "uptime": "99.98%",
-    "uptimeDay": "98.20%",
-    "uptimeWeek": "99.74%",
-    "uptimeMonth": "99.94%",
-    "uptimeYear": "99.98%",
-    "time": 431,
-    "timeDay": 340,
-    "timeWeek": 404,
-    "timeMonth": 410,
-    "timeYear": 431,
+    "status": "up",
+    "uptime": "99.92%",
+    "uptimeDay": "91.13%",
+    "uptimeWeek": "98.73%",
+    "uptimeMonth": "99.71%",
+    "uptimeYear": "99.92%",
+    "time": 432,
+    "timeDay": 388,
+    "timeWeek": 421,
+    "timeMonth": 415,
+    "timeYear": 432,
     "dailyMinutesDown": {
-      "2025-11-18": 26
+      "2025-11-18": 128
     }
   },
   {
@@ -44,19 +44,19 @@
     "url": "https://api.risksentinel.ai/v1/news",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-news-endpoint",
-    "status": "down",
-    "uptime": "99.98%",
-    "uptimeDay": "98.20%",
-    "uptimeWeek": "99.74%",
-    "uptimeMonth": "99.94%",
-    "uptimeYear": "99.98%",
-    "time": 250,
-    "timeDay": 113,
-    "timeWeek": 159,
-    "timeMonth": 169,
-    "timeYear": 250,
+    "status": "up",
+    "uptime": "99.92%",
+    "uptimeDay": "91.13%",
+    "uptimeWeek": "98.73%",
+    "uptimeMonth": "99.71%",
+    "uptimeYear": "99.92%",
+    "time": 251,
+    "timeDay": 152,
+    "timeWeek": 173,
+    "timeMonth": 173,
+    "timeYear": 251,
     "dailyMinutesDown": {
-      "2025-11-18": 26
+      "2025-11-18": 128
     }
   },
   {
@@ -64,19 +64,19 @@
     "url": "https://api.risksentinel.ai/v1/topics",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-topics-endpoint",
-    "status": "down",
-    "uptime": "99.98%",
-    "uptimeDay": "98.20%",
-    "uptimeWeek": "99.74%",
-    "uptimeMonth": "99.94%",
-    "uptimeYear": "99.98%",
+    "status": "up",
+    "uptime": "99.92%",
+    "uptimeDay": "91.13%",
+    "uptimeWeek": "98.73%",
+    "uptimeMonth": "99.71%",
+    "uptimeYear": "99.92%",
     "time": 77,
-    "timeDay": 62,
-    "timeWeek": 76,
-    "timeMonth": 93,
+    "timeDay": 73,
+    "timeWeek": 80,
+    "timeMonth": 94,
     "timeYear": 77,
     "dailyMinutesDown": {
-      "2025-11-18": 26
+      "2025-11-18": 128
     }
   },
   {
@@ -84,19 +84,19 @@
     "url": "https://api.risksentinel.ai/v1/sources",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-sources-endpoint",
-    "status": "down",
-    "uptime": "99.98%",
-    "uptimeDay": "98.21%",
-    "uptimeWeek": "99.74%",
-    "uptimeMonth": "99.94%",
-    "uptimeYear": "99.98%",
+    "status": "up",
+    "uptime": "99.92%",
+    "uptimeDay": "91.13%",
+    "uptimeWeek": "98.73%",
+    "uptimeMonth": "99.71%",
+    "uptimeYear": "99.92%",
     "time": 110,
-    "timeDay": 99,
-    "timeWeek": 120,
-    "timeMonth": 123,
+    "timeDay": 117,
+    "timeWeek": 127,
+    "timeMonth": 125,
     "timeYear": 110,
     "dailyMinutesDown": {
-      "2025-11-18": 26
+      "2025-11-18": 128
     }
   },
   {
@@ -104,19 +104,19 @@
     "url": "https://risksentinel.ai",
     "icon": "https://icons.duckduckgo.com/ip3/risksentinel.ai.ico",
     "slug": "risk-sentinel-main-website",
-    "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "98.83%",
-    "uptimeWeek": "99.83%",
-    "uptimeMonth": "99.96%",
-    "uptimeYear": "99.99%",
+    "status": "up",
+    "uptime": "99.92%",
+    "uptimeDay": "91.75%",
+    "uptimeWeek": "98.82%",
+    "uptimeMonth": "99.73%",
+    "uptimeYear": "99.92%",
     "time": 85,
-    "timeDay": 54,
-    "timeWeek": 82,
+    "timeDay": 62,
+    "timeWeek": 83,
     "timeMonth": 95,
     "timeYear": 85,
     "dailyMinutesDown": {
-      "2025-11-18": 17
+      "2025-11-18": 119
     }
   }
 ]
