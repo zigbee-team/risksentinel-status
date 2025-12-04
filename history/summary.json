@@ -24,18 +24,19 @@
     "url": "https://api.risksentinel.ai/v1/events",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-events-endpoint",
-    "status": "up",
-    "uptime": "99.93%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.71%",
-    "uptimeYear": "99.93%",
+    "status": "down",
+    "uptime": "99.92%",
+    "uptimeDay": "99.81%",
+    "uptimeWeek": "99.97%",
+    "uptimeMonth": "99.70%",
+    "uptimeYear": "99.92%",
     "time": 428,
     "timeDay": 337,
     "timeWeek": 356,
     "timeMonth": 404,
     "timeYear": 428,
     "dailyMinutesDown": {
+      "2025-12-04": 3,
       "2025-11-18": 128
     }
   },
@@ -44,10 +45,10 @@
     "url": "https://api.risksentinel.ai/v1/news",
     "icon": "https://icons.duckduckgo.com/ip3/api.risksentinel.ai.ico",
     "slug": "risk-sentinel-api-news-endpoint",
-    "status": "up",
+    "status": "down",
     "uptime": "99.93%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.92%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "99.71%",
     "uptimeYear": "99.93%",
     "time": 237,
@@ -56,6 +57,7 @@
     "timeMonth": 150,
     "timeYear": 237,
     "dailyMinutesDown": {
+      "2025-12-04": 1,
       "2025-11-18": 128
     }
   },
